@@ -118,7 +118,7 @@ public class API {
                         try{
                             //TODO: complete this
                             JSONObject jsonDoctor = new JSONObject(response);
-                            Doctor doctor = new Doctor();
+                            Doctor doctor = new Doctor(1, "Kevin", "Yang");
 
                         } catch(JSONException j){
                             Log.e("JSON Conversion", "Failed to convert allergy to JSON");
@@ -145,7 +145,7 @@ public class API {
                         try{
                             //TODO: complete this
                             JSONArray jsonPrescriptions = new JSONArray(response);
-                            Prescription prescription = new Prescription();
+                            Prescription prescription = new Prescription(1, 1, "");
 
                         } catch(JSONException j){
                             Log.e("JSON Conversion", "Failed to convert allergy to JSON");
